@@ -1,22 +1,4 @@
 
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
 /* 
 ---------------------------------------------
 font & reset css
@@ -674,60 +656,69 @@ header
   }
 }
 
-/* Navigation container */
+/* NAVIGATION CONTAINER */
 .nav {
   display: flex;
-  justify-content: center; /* center menu items horizontally */
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 10px; /* spacing between menu items */
-  background-color: black; /* or your preferred background */
+  gap: 20px;
+  background-color: black;
 }
 
-/* Menu items */
+/* MENU ITEM */
 .nav li {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* Links */
+/* LINK UTAMA */
 .nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  padding: 10px 15px;
-  display: block;
-  transition: 0.3s;
+  padding: 15px 20px;
+  display: inline-block;
+  line-height: 1;
+  transition: color 0.3s;
 }
 
-/* Hover effect */
+/* HOVER */
 .nav a:hover {
-  color: #f0c040; /* or any color you like */
+  color: #f0c040;
 }
 
-/* Submenu (dropdown) */
+/* SUBMENU */
 .has-sub .sub-menu {
   display: none;
   position: absolute;
-  background-color: #111;
   top: 100%;
   left: 0;
+  background-color: #111;
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
   min-width: 160px;
-  z-index: 99;
+  z-index: 999;
 }
 
+/* TUNJUK SUBMENU BILA HOVER */
 .has-sub:hover .sub-menu {
   display: block;
 }
 
-/* Submenu items */
+/* ITEM SUBMENU */
+.sub-menu li {
+  width: 100%;
+}
+
 .sub-menu li a {
-  padding: 10px 20px;
+  padding: 12px 20px;
   color: white;
+  display: block;
   white-space: nowrap;
 }
 
